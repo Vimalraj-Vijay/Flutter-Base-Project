@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:init_str/splash_screen.dart';
-import 'package:init_str/utils/color.dart';
-import 'package:init_str/utils/routes.dart';
-import 'package:init_str/utils/strings.dart';
-import 'package:init_str/utils/text_theme.dart';
+import 'package:flutter_project_base/splash_screen.dart';
+import 'package:flutter_project_base/utils/color.dart';
+import 'package:flutter_project_base/utils/routes.dart';
+import 'package:flutter_project_base/utils/strings.dart';
+import 'package:flutter_project_base/utils/text_theme.dart';
 
 void main() {
   runApp(const MyApp());

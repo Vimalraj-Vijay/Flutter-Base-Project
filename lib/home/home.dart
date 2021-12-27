@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:init_str/splash_screen.dart';
-import 'package:init_str/utils/header.dart';
+import 'package:flutter_project_base/splash_screen.dart';
+import 'package:flutter_project_base/utils/header.dart';
 
 class Home extends StatelessWidget {
   static var id = "/home";
+
+  const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

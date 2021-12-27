@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:init_str/home/home.dart';
-import 'package:init_str/utils/color.dart';
-import 'package:init_str/utils/navigator.dart';
-import 'package:init_str/utils/strings.dart';
-import 'package:init_str/utils/text_theme.dart';
+import 'package:flutter_project_base/home/home.dart';
+import 'package:flutter_project_base/utils/color.dart';
+import 'package:flutter_project_base/utils/navigator.dart';
+import 'package:flutter_project_base/utils/strings.dart';
+import 'package:flutter_project_base/utils/text_theme.dart';
 
 class SplashScreen extends StatefulWidget {
   static var id = "/splash";

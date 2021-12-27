@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:init_str/utils/navigator.dart';
+import 'package:flutter_project_base/utils/navigator.dart';
 
 import 'color.dart';
 

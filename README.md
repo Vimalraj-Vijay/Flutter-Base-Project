@@ -1,4 +1,4 @@
-# init_str
+# flutter_project_base
 
 A new Flutter project.
 

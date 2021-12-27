@@ -1,8 +1,6 @@
-
-
 import 'package:flutter/cupertino.dart';
-import 'package:init_str/home/home.dart';
-import 'package:init_str/splash_screen.dart';
+import 'package:flutter_project_base/home/home.dart';
+import 'package:flutter_project_base/splash_screen.dart';
 
 Map<String,WidgetBuilder> initRoutes(){
   return {
