@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:flutter_project_base/home/home.dart';
 import 'package:flutter_project_base/utils/color.dart';
 import 'package:flutter_project_base/utils/navigator.dart';
