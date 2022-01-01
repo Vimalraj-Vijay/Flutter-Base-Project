@@ -1,2 +1,10 @@
 const String appHeaderName = "Flutter Development";
+const String appName = "Flutter Development";
 const String splashText = "Flutter Base Project";
+const String homePageHeaderTitle = "Home Page";
+const String loginPageHeaderTitle = "Login";
+const String noAccountSignup = "Don't have an account? Signup here";
+const String forgotPassword = "Forgot password?";
+const String login = "Login";
+const String hintEnterPassword = "Enter your password";
+const String hintEnterEmail = "Enter your email id";

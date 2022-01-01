@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_project_base/utils/color.dart';
 
@@ -6,9 +8,8 @@ var fontFamily = 'Cabin';
 TextTheme get textThemeing {
   TextTheme textStyling = TextTheme(
     headline1: TextStyle(
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.bold,
         fontFamily: fontFamily,
-        fontStyle: FontStyle.italic,
         fontSize: 20,
         color: headerTextColor),
     subtitle1: TextStyle(
@@ -16,9 +17,15 @@ TextTheme get textThemeing {
         fontFamily: fontFamily,
         color: headerTextColor),
     bodyText1: TextStyle(
-        fontWeight: FontWeight.w200,
+        fontWeight: FontWeight.normal,
+        fontFamily: fontFamily,
+        color: bodyTextColor),
+    bodyText2: TextStyle(
+        fontWeight: FontWeight.w700,
         fontFamily: fontFamily,
         color: bodyTextColor),
   );
   return textStyling;
 }
+
+var textFieldStyle = TextStyle(fontWeight: FontWeight.w700, fontFamily: fontFamily, color: bodyTextColor);

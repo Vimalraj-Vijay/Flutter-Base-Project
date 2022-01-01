@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
@@ -7,5 +9,7 @@ void pushReplacementNamed(BuildContext context, String routeName) {
 }
 
 void back() {
-  SystemChannels.platform.invokeMethod<void>('SystemNavigator.pop');
+  Platform.isIOS
+      ? exit(0)
+      : SystemChannels.platform.invokeMethod('SystemNavigator.pop');
 }

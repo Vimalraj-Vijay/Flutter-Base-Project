@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_base/splash_screen.dart';
 import 'package:flutter_project_base/utils/header.dart';
+import 'package:flutter_project_base/utils/strings.dart';
 
 class Home extends StatelessWidget {
   static var id = "/home";
@@ -12,8 +12,10 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: SizedBox(
         child: Column(
-          children: [
-            Header(title: "Home Page", onBackPressRoute: SplashScreen.id),
+          children: const [
+            Header(
+              title: homePageHeaderTitle,
+            ),
             Text("Welcome to Home Page "),
           ],
         ),

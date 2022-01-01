@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_base/home/home.dart';
+import 'package:flutter_project_base/login/login_view.dart';
 import 'package:flutter_project_base/utils/color.dart';
 import 'package:flutter_project_base/utils/navigator.dart';
 import 'package:flutter_project_base/utils/strings.dart';
@@ -28,13 +29,12 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 250,
+              width: 300,
               height: 250,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage('assets/images/splash_logo.png'),
                     fit: BoxFit.fill),
-                shape: BoxShape.circle,
               ),
             ),
             Text(
@@ -59,6 +59,6 @@ class _SplashScreenState extends State<SplashScreen> {
         milliseconds: SplashScreen.splashTimeOutInMilliSeconds,
       ),
     );
-    pushReplacementNamed(context, Home.id);
+    pushReplacementNamed(context, LoginView.id);
   }
 }
