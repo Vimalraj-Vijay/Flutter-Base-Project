@@ -28,4 +28,10 @@ TextTheme get textThemeing {
   return textStyling;
 }
 
-var textFieldStyle = TextStyle(fontWeight: FontWeight.w700, fontFamily: fontFamily, color: bodyTextColor);
+var textFieldStyle = TextStyle(
+    fontWeight: FontWeight.w700, fontFamily: fontFamily, color: bodyTextColor);
+var textStyleRegular = TextStyle(
+    fontWeight: FontWeight.normal,
+    fontFamily: fontFamily,
+    color: bodyTextColor,
+    fontSize: 18.0);

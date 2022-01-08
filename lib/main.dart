@@ -4,6 +4,7 @@ import 'package:flutter_project_base/utils/color.dart';
 import 'package:flutter_project_base/utils/routes.dart';
 import 'package:flutter_project_base/utils/strings.dart';
 import 'package:flutter_project_base/utils/text_theme.dart';
+import 'package:oktoast/oktoast.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,14 +16,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: appHeaderName,
-      theme: ThemeData(
-        primarySwatch: primaryAppTheme,
-        textTheme: textThemeing,
+    return OKToast(
+      child: MaterialApp(
+        title: appHeaderName,
+        theme: ThemeData(
+          primarySwatch: primaryAppTheme,
+          textTheme: textThemeing,
+        ),
+        initialRoute: SplashScreen.id,
+        routes: initRoutes(),
       ),
-      initialRoute: SplashScreen.id,
-      routes: initRoutes(),
     );
   }
 }

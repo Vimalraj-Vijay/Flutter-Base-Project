@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_base/login/login_body.dart';
+import 'package:flutter_project_base/login/login_with_mobile.dart';
 import 'package:flutter_project_base/utils/color.dart';
 
 class LoginView extends StatefulWidget {
@@ -14,10 +14,13 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: bodyTextColor,
+      backgroundColor: white,
       body: SafeArea(
-        child: LoginBody(),
         bottom: false,
+        top: false,
+        child: SingleChildScrollView(
+          child: LoginWithMobile(),
+        ),
       ),
     );
   }

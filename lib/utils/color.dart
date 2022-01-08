@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 const appPrimary = 0xFF1302FF;
@@ -13,6 +11,7 @@ const headerIconColor = Color(0xFF292929);
 const headerTextColor = Color(0xFF292929);
 const bodyTextColor = Color(0xC9302C2C);
 const disableBg = Color(0xFFc9c9c9);
+const borderLineColor = Color(0xC9302C2C);
 
 const MaterialColor primaryAppTheme = MaterialColor(
   appPrimary,
