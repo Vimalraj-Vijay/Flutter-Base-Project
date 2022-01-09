@@ -54,7 +54,7 @@ class _LoginWithMobileState extends State<LoginWithMobile> {
               horizontal: 20.0,
             ),
             child: Text(
-              "You will receive a verification code. Carrier rates may apply.",
+              messageDesc,
               style: textStyleRegular,
               textAlign: TextAlign.center,
             ),
@@ -68,7 +68,7 @@ class _LoginWithMobileState extends State<LoginWithMobile> {
                 CountryListPick(
                   appBar: AppBar(
                     backgroundColor: Colors.redAccent,
-                    title: Text("Choose your country"),
+                    title: const Text(chooseYourCountry),
                   ),
                   pickerBuilder: (context, countryCode) {
                     return Container(
@@ -185,7 +185,7 @@ class _LoginWithMobileState extends State<LoginWithMobile> {
                 child: ElevatedButton(
                   onPressed: () => getAllValues(
                       mobileNumberController, countryCodeController, context),
-                  child: const Text("Send verification code"),
+                  child: const Text(sendVerificationCode),
                   style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all(Colors.redAccent),
@@ -204,7 +204,7 @@ void getAllValues(TextEditingController mobileNumber,
     TextEditingController countrycode, BuildContext context) {
   var text = "";
   if (mobileNumber.text.isEmpty) {
-    text = "Mobile Number is required";
+    text = errorMobileNumberRequired;
   } else {
     text = mobileNumber.text;
   }

@@ -8,3 +8,7 @@ const String forgotPassword = "Forgot password?";
 const String login = "Login";
 const String hintEnterPassword = "Enter your password";
 const String hintEnterEmail = "Enter your email id";
+const String errorMobileNumberRequired = "Mobile Number is required";
+const String messageDesc = "You will receive a verification code. Carrier rates may apply.";
+const String chooseYourCountry = "Choose your country";
+const String sendVerificationCode = "Send verification code";
