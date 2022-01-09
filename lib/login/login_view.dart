@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_project_base/login/login_with_mobile.dart';
 import 'package:flutter_project_base/utils/color.dart';
 
@@ -13,14 +14,17 @@ class LoginView extends StatefulWidget {
 class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: white,
-      body: SafeArea(
-        bottom: false,
-        top: false,
-        child: SingleChildScrollView(
-          child: LoginWithMobile(),
-        ),
+      appBar: PreferredSize(
+          child: AppBar(
+            backgroundColor: Colors.red,
+            elevation: 0.0,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+          ),
+          preferredSize: const Size.fromHeight(0.0)),
+      body: const SingleChildScrollView(
+        child: LoginWithMobile(),
       ),
     );
   }

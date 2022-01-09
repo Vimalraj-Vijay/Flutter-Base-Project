@@ -28,9 +28,6 @@ class _LoginWithMobileState extends State<LoginWithMobile> {
     final mobileNumberController = TextEditingController();
 
     return Container(
-      margin: const EdgeInsets.only(
-        top: 20.0,
-      ),
       width: mediaQuery.size.width,
       height: mediaQuery.size.height -
           mediaQuery.padding.top -
@@ -178,7 +175,7 @@ class _LoginWithMobileState extends State<LoginWithMobile> {
                 margin: const EdgeInsets.only(
                   left: 20.0,
                   right: 20.0,
-                  bottom: 20.0,
+                  bottom: 40.0,
                 ),
                 width: double.infinity,
                 height: 50.0,
